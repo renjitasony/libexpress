@@ -8,8 +8,6 @@ const app =express();
 const chalk = require('chalk');
 const path = require('path');
 
-
-
 app.set("view engine","ejs");
 app.set("views","./src/views");
 
@@ -27,20 +25,3 @@ app.get("/",function(req,res){
         nav:[{link:"/books",title:"Books"},{link:"/authors",title:"Authors"}]
     });
 });
-// app.get("/books",function(req,res){
-//     res.render("books",{
-//         ptitle:"Books",
-//         nav:[{link:"/books",title:"Books"},{link:"/authors",title:"Authors"}],
-//         bookslist:book_array
-//     });
-// });
-// app.get("/book/:id",function(req,res){
-//     var id = req.params.id;
-//     console.log(id);
-//     console.log(book_array[id].bktitle);
-//     res.render("book",{
-//         ptitle:"Books",
-//         nav:[{link:"/books",title:"Books"},{link:"/authors",title:"Authors"}],
-//         book:book_array[id]
-//     });
-// });
