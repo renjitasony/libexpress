@@ -169,7 +169,7 @@ router.get("/:id",function(req,res){
     console.log(id);
     console.log(book_array[id].bktitle);
     res.render("book",{
-        ptitle:"Books",
+        ptitle:"Book",
         nav:[{link:"/books",title:"Books"},{link:"/authors",title:"Authors"}],
         book:book_array[id]
     });

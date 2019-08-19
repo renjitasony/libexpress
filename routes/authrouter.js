@@ -109,7 +109,7 @@ router.get("/:id",function(req,res){
     console.log(id);
     console.log(author_array[id].authname);
     res.render("author",{
-        ptitle:"Authors",
+        ptitle:"Author",
         nav:[{link:"/books",title:"Books"},{link:"/authors",title:"Authors"}],
         author:author_array[id]
     });
