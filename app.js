@@ -13,8 +13,8 @@ const path = require('path');
 app.set("view engine","ejs");
 app.set("views","./src/views");
 
-app.listen(8976,function(req,res){
-    console.log("server started"+chalk.red('8976'));
+app.listen(process.env.PORT || 8976,()=>{
+    console.log("server started at"+chalk.red('8976'));
 });
 app.use(express.static(path.join(__dirname,"/public")));
 app.use(bodyparser.urlencoded({extended:true}));

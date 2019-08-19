@@ -89,37 +89,11 @@ var author_array = [
         authimage:"https://images.gr-assets.com/authors/1209169297p5/9068.jpg"
     }, 
    
-  
-  
     {
-        "bkid":"E13",
-        "bktitle":"TELL ME YOUR DREAMS",
-        "bkauthor":"Sidney Sheldon",
-        "bkcategory":"Thriller",
-        "bkdescptn":"Tell Me Your Dreams is a 1998 novel by American writer Sidney Sheldon.",
-        "bkpages":390,
-        "bkprice":250,
-        "bkimage":"https://images-eu.ssl-images-amazon.com/images/I/51OAEn0DQeL.jpg"
-    },
-    {
-        "bkid":"E14",
-        "bktitle":"AND THEN THERE WERE NONE",
-        "bkauthor":"Agatha Christie",
-        "bkcategory":"Thriller",
-        "bkdescptn":"And Then There Were None is a mystery novel by English writer Agatha Christie, described by her as the most difficult of her books to write.[2] It was first published in the United Kingdom by the Collins Crime Club on 6 November 1939, as Ten Little Niggers,[3] after the minstrel song, which serves as a major plot point.",
-        "bkpages":390,
-        "bkprice":250,
-        "bkimage":"https://images-na.ssl-images-amazon.com/images/I/81B9LhCS2AL.jpg"
-    },
-    {
-        "bkid":"E15",
-        "bktitle":"ODYSSEY",
-        "bkauthor":"Homer",
-        "bkcategory":"Mythology",
-        "bkdescptn":"The Odyssey is one of two major ancient Greek epic poems attributed to Homer. It is, in part, a sequel to the Iliad, the other Homeric epic. The Odyssey is fundamental to the modern Western canon; it is the second-oldest extant work of Western literature, while the Iliad is the oldest. Scholars believe the Odyssey was composed near the end of the 8th century BC, somewhere in Ionia, the Greek coastal region of Anatolia.",
-        "bkpages":432,
-        "bkprice":450,
-        "bkimage":"https://images-na.ssl-images-amazon.com/images/I/51UQHGmwJvL.jpg"
+        authid:"E11",        
+        authname:"Homer",
+        authgenre:"Mythology",      
+        authimage:"https://images.gr-assets.com/authors/1390672749p5/903.jpg"
     }
 ];
 
@@ -133,10 +107,10 @@ router.get("/",function(req,res){
 router.get("/:id",function(req,res){
     var id = req.params.id;
     console.log(id);
-    console.log(author_array[id].bktitle);
-    res.render("authors",{
+    console.log(author_array[id].authname);
+    res.render("author",{
         ptitle:"Authors",
         nav:[{link:"/books",title:"Books"},{link:"/authors",title:"Authors"}],
-        book:author_array[id]
+        author:author_array[id]
     });
 });
