@@ -11,12 +11,6 @@ const path = require('path');
 app.set("view engine","ejs");
 app.set("views","./src/views");
 
-// app.listen(process.env.PORT || 8976,function(req,res){
-//     console.log("server started at"+chalk.red('8976'));
-// });
-app.listen(process.env.PORT || 3000,function(req,res){
-    console.log("server is ready")
-})
 app.use(express.static(path.join(__dirname,"/public")));
 app.use(bodyparser.urlencoded({extended:true}));
 app.use("/books",bkrouter);
@@ -27,4 +21,7 @@ app.get("/",function(req,res){
         ptitle:"Library",
         nav:[{link:"/books",title:"Books"},{link:"/authors",title:"Authors"}]
     });
+});
+app.listen(process.env.PORT || 8976,function(req,res){
+    console.log("server started at"+chalk.red('8976'));
 });
