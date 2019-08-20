@@ -103,7 +103,7 @@ var book_array = [
         "bkdescptn":"The Diary of a Young Girl, also known as The Diary of Anne Frank, is a book of the writings from the Dutch language diary kept by Anne Frank while she was in hiding for two years with her family during the Nazi occupation of the Netherlands. The family was apprehended in 1944, and Anne Frank died of typhus in the Bergen-Belsen concentration camp in 1945. The diary was retrieved by Miep Gies, who gave it to Anne's father, Otto Frank, the family's only known survivor, just after the war was over. The diary has since been published in more than 60 languages.",
         "bkpages":390,
         "bkprice":250,
-        "bkimage":"diaryof young girl.jpg"
+        "bkimage":"https://is2-ssl.mzstatic.com/image/thumb/Publication128/v4/7b/f8/6f/7bf86f52-3171-6dc3-2cc7-084119fcbc68/the_diary_of_a_young_girl_v2_2500.jpg/268x0w.jpg"
     },
     {
         "bkid":"E11",

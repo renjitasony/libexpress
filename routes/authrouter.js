@@ -9,13 +9,7 @@ var author_array = [
         authname:"Amish Tripathi",       
         authgenre:"Mythology",        
         authimage:"https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/Amish_Tripathi_Author.JPG/220px-Amish_Tripathi_Author.JPG"
-    },
-    {
-        authid:"E02",        
-        authname:"John Green",
-        authgenre:"Romance",      
-        authimage:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/John_Green_by_Gage_Skidmore.jpg/220px-John_Green_by_Gage_Skidmore.jpg"
-    },
+    },    
     {
         authid:"E02",        
         authname:"Mohandas K. Gandhi",
@@ -45,13 +39,7 @@ var author_array = [
         authname:"Jamie Mcguire",
         authgenre:"Romance",      
         authimage:"https://i.ytimg.com/vi/qqLec5PzfFc/maxresdefault.jpg"
-    },
-    {
-        authid:"E06",        
-        authname:"APJ Abdul Kalam",
-        authgenre:"Autobiography",      
-        authimage:"https://www.jagranjosh.com/imported/images/E/Articles/facts-about-Kalam.jpg"
-    },
+    },   
     {
         authid:"E07",        
         authname:"Anne Frank",
@@ -63,37 +51,30 @@ var author_array = [
         authname:"Pratibha Ray",
         authgenre:"Mythology",      
         authimage:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Pratiba_Ray_2010.JPG/800px-Pratiba_Ray_2010.JPG"
-    },  
-    {
-        authid:"E08",        
-        authname:"Pratibha Ray",
-        authgenre:"Mythology",      
-        authimage:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Pratiba_Ray_2010.JPG/800px-Pratiba_Ray_2010.JPG"
-    },  
+    },    
     {
         authid:"E09",        
         authname:"Agatha Christie",
         authgenre:"Thriller",      
         authimage:"https://agathachristie.imgix.net/archive/website/home/ac-photo.jpg?auto=compress,format&fit=clip&q=65&w=400"
-    }, 
-    {
-        authid:"E09",        
-        authname:"Agatha Christie",
-        authgenre:"Thriller",      
-        authimage:"https://agathachristie.imgix.net/archive/website/home/ac-photo.jpg?auto=compress,format&fit=clip&q=65&w=400"
-    }, 
+    },    
     {
         authid:"E10",        
         authname:"Sidney Sheldon",
         authgenre:"Thriller",      
         authimage:"https://images.gr-assets.com/authors/1209169297p5/9068.jpg"
-    }, 
-   
+    },
     {
         authid:"E11",        
-        authname:"Homer",
-        authgenre:"Mythology",      
-        authimage:"https://images.gr-assets.com/authors/1390672749p5/903.jpg"
+        authname:"APJ Abdul Kalam",
+        authgenre:"Autobiography",      
+        authimage:"https://www.jagranjosh.com/imported/images/E/Articles/facts-about-Kalam.jpg"
+    },   
+    {
+        authid:"E12",        
+        authname:"John Green",
+        authgenre:"Romance",      
+        authimage:"https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/John_Green_by_Gage_Skidmore.jpg/220px-John_Green_by_Gage_Skidmore.jpg"
     }
 ];
 
@@ -105,9 +86,7 @@ router.get("/",function(req,res){
     });
 });
 router.get("/:id",function(req,res){
-    var id = req.params.id;
-    console.log(id);
-    console.log(author_array[id].authname);
+    var id = req.params.id;  
     res.render("author",{
         ptitle:"Author",
         nav:[{link:"/books",title:"Books"},{link:"/authors",title:"Authors"}],
