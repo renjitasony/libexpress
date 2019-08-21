@@ -15,7 +15,17 @@ var book_array = [
         "bkimage":"https://www.harappa.com/sites/default/files/images/91zAAyo36HL.jpg"
     },
     {
-        "bkid":1,
+        "bkid":"E02",
+        "bktitle":"THE PALACE OF ILLUSIONS",
+        "bkauthor":"Chitra Banerjee",
+        "bkcategory":"Mythology",
+        "bkdescptn":"The Palace of Illusions is a 2008 novel by award-winning novelist and poet Chitra Banerjee Divakaruni. It was released by Picador. The novel is a rendition of the Hindu epic Mahabharata as told from Draupadi's (Panchaali's) viewpoint, namely, that of a woman living in a patriarchal world. As Booklist summarizes the plot, Smart, resilient, and courageous Panchaali, born of fire, marries all five of the famously heroic Pandava brothers, harbors a secret love, endures a long exile in the wilderness, instigates a catastrophic war, and slowly learns the truth about Krishna, her mysterious friend.",
+        "bkpages":490,
+        "bkprice":350,
+        "bkimage":"https://images-na.ssl-images-amazon.com/images/I/A1fPTEf2nKL.jpg"
+    },
+    {
+        "bkid":"E03",
         "bktitle":"THE FAULT IN OUR STARS",
         "bkauthor":"John Green",
         "bkcategory":"Romance",
@@ -44,17 +54,7 @@ var book_array = [
         "bkprice":250,
         "bkimage":"https://images-na.ssl-images-amazon.com/images/I/51WytTF0BwL._SY445_.jpg"
     },
-    {
-        "bkid":"E02",
-        "bktitle":"THE PALACE OF ILLUSIONS",
-        "bkauthor":"Chitra Banerjee",
-        "bkcategory":"Mythology",
-        "bkdescptn":"The Palace of Illusions is a 2008 novel by award-winning novelist and poet Chitra Banerjee Divakaruni. It was released by Picador. The novel is a rendition of the Hindu epic Mahabharata as told from Draupadi's (Panchaali's) viewpoint, namely, that of a woman living in a patriarchal world. As Booklist summarizes the plot, Smart, resilient, and courageous Panchaali, born of fire, marries all five of the famously heroic Pandava brothers, harbors a secret love, endures a long exile in the wilderness, instigates a catastrophic war, and slowly learns the truth about Krishna, her mysterious friend.",
-        "bkpages":490,
-        "bkprice":350,
-        "bkimage":"https://images-na.ssl-images-amazon.com/images/I/A1fPTEf2nKL.jpg"
-    },
-    
+        
     {
         "bkid":"E06",
         "bktitle":"THE NOTEBOOK",
